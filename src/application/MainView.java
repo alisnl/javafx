@@ -49,6 +49,8 @@ import javafx.scene.shape.Line;
  */
 public class MainView implements Initializable {
 
+	@FXML
+	private Label linieSize;
 
 	@FXML
 	private TextField ipField;
@@ -316,7 +318,7 @@ public class MainView implements Initializable {
 //			paneMittel.getChildren().addAll(line1,line2,line3,line4);
 //		} 
 		
-	
+	        linieSize.setText(""+mittelPanaManager.getVerbindungs().size());
 
 	}
 
